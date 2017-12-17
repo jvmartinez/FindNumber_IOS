@@ -101,11 +101,27 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-Al-GA7">
-                                        <rect key="frame" x="160" y="17" width="120" height="30"/>
+                                        <rect key="frame" x="192" y="8" width="120" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Encontrar"/>
+                                        <color key="backgroundColor" red="0.59221373601477878" green="0.67371821612077298" blue="0.77981298575129532" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Encontrar">
+                                            <color key="titleColor" red="1" green="0.97258273524861538" blue="0.98115051973152423" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <action selector="actionValidate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WZZ-6O-vVm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ba8-os-81I">
+                                        <rect key="frame" x="192" y="44" width="120" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.5933302640914917" green="0.67275738716125488" blue="0.78091615438461304" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Reiniciar">
+                                            <color key="titleColor" red="0.99191830138238979" green="1" blue="0.99170811704884754" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s9g-gD-5kf"/>
                                         </connections>
                                     </button>
                                 </subviews>

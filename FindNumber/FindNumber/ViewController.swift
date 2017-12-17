@@ -28,7 +28,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func actionReset(_ sender: Any) {
+        self.valueCorrect = 0
+        self.valueFail = 0
+        self.lblCounFail.text = String(self.valueFail)
+        self.lblCountCorrect.text = String(self.valueCorrect)
+        self.lblNotification.text = ""
+        self.viewContainerNotification.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
+    
     @IBAction func actionValidate(_ sender: Any) {
         if(String(self.numberRandom) == txtNumber.text){
             self.valueCorrect = self.valueCorrect + 1
